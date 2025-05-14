@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎨 Pixel Art Maker</h1>
+  </header>
+  <main>
+    <section class="toolbar">
+      <label for="grid-size">Grid Size: <span id="grid-size-value">16</span>x<span id="grid-size-value2">16</span></label>
+      <input type="range" id="grid-size" min="8" max="64" value="16">
+      <input type="color" id="color-picker" value="#000000" aria-label="Pick color">
+      <button id="reset-btn">Reset</button>
+      <button id="download-btn">Download PNG</button>
+    </section>
+    <section id="canvas-container"></section>
+  </main>
+  <footer>
+    <small>&copy; 2025 Pixel Art Maker</small>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
